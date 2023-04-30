@@ -12,6 +12,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 
+    scrollbar-width: thin;
+    scrollbar-color: rgba(105, 34, 227, 0.937) #101010;
+
     font-family: 'Roboto', sans-serif;
 }
 
@@ -256,8 +259,7 @@
     width: 100%;
     height: 100%;
 
-    background: #19A7CE;
-
+    background: linear-gradient(-120deg, #48c6ef, #6f86d6);
     border-radius: 20px;
 
     backface-visibility: hidden;
@@ -282,7 +284,7 @@
 
     transform: rotateY(180deg);
 
-    background: #f5ea7b;
+    background: linear-gradient(-120deg, #f9d423, #ff4e50);
     color: black;
 
     border-radius: 20px;
@@ -294,6 +296,68 @@
 
     font-weight: bold;
 
+}
+
+/* FEATURES-SECTION */
+#features {
+    width: 100vw;
+    min-height: 50vh;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    backface-visibility: hidden;
+    animation: dropItDown 1.3s ease;
+
+}
+
+#features .first-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    text-align: center;
+}
+
+#features .first-half h1 {
+    font-weight: bold;
+    font-size: clamp(2rem, 5vw, 6rem);
+
+    margin-bottom: 40px;
+}
+
+#features .first-half h1 .special {
+    background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#features .first-half p {
+    font-size: clamp(0.6rem, 1vw, 3rem);
+    font-weight: bold;
+    
+    color: grey;
+
+    margin-bottom: 20px;
+}
+
+#features .first-half a {
+    text-decoration: none;
+    color: white;
+
+    font-weight: bold;
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+
+    border: 1.2px solid var(--button-color);
+    border-radius: 45px;
+
+    padding: 20px 40px;
+
+    background: var(--button-color);
+
+    transition: padding 0.5s ease;
 }
 
 /* MEDIA-QUERIES */
@@ -339,6 +403,15 @@
         width: 300px;
         height: 250px;
     }
+
+    #explore .explore-cards-container .explore-cards .transform-card .card-back {
+        font-size: 18px;
+    }
+
+    /* FEATURES-SECTION */
+    #features {
+        flex-direction: column;
+    }
 }
 
 /* HOVER-EFFECTS */
@@ -352,6 +425,9 @@
     cursor: pointer;
 }
 
+#features .first-half a:hover {
+    padding: 20px 90px;
+}
 
 
 /* ANIMATIONS */
