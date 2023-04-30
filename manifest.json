@@ -1,0 +1,53 @@
+{
+    "short_name": "SK",
+    "name": "SK",
+    "start_url": ".",
+    "id": "",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "description": "ECHO : connect, create & enjoy",
+
+    "icons": [
+        {
+            "src": "/favicon/Echo-Favicon/android_chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/favicon/Echo-Favicon/android_chrome-192x192.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/favicon/Echo-Favicon/android_chrome-192x192.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/favicon/Echo-Favicon/android_chrome-192x192.png",
+            "type": "image/png",
+            "sizes": "358x730"
+        },
+        {
+            "src": "/favicon/Echo-Favicon/android_chrome-192x192.png",
+            "type": "image/jpg",
+            "sizes": "358x730"
+        },
+        {
+            "src": "/favicon/Echo-Favicon/android_chrome-192x192.png",
+            "type": "image/jpg",
+            "sizes": "358x730"
+        },
+        {
+            "src": "/favicon/Echo-Favicon/android_chrome-192x192.png",
+            "type": "image/jpg",
+            "sizes": "358x730"
+        }
+    ]
+}
