@@ -84,6 +84,7 @@
     background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: none;
 }
 
 #main-container #nav-bar-section .links {
@@ -149,6 +150,7 @@
     background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: none;
 
     margin-bottom: 30px;
 }
@@ -213,6 +215,7 @@
     background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: none;
 
     margin-bottom: 20px;
 }
@@ -332,6 +335,7 @@
     background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: none;
 
 }
 
