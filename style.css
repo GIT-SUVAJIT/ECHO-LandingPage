@@ -173,6 +173,127 @@
 
 #introduction-section .header-image img {
    border-radius: 30px;
+   margin-bottom: 90px;
+}
+
+/* EXPLORE-SECTION */
+#explore {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    backface-visibility: hidden;
+    animation: dropItDown 1s ease;
+}
+
+#explore .explore-primary-text h1 {
+    font-weight: normal;
+    font-size: clamp(1.2rem, 2vw, 2.1rem);
+
+    color: rgb(11, 163, 163);
+
+    margin-bottom: 20px;
+}
+
+#explore .explore-main-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#explore .explore-main-text h1 {
+    font-weight: bold;
+    font-size: clamp(2rem, 5vw, 6rem);
+}
+
+#explore .explore-main-text .special {
+    background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 20px;
+}
+
+#explore .explore-paragraph p {
+    font-size: clamp(0.6rem, 1vw, 3rem);
+    font-weight: bold;
+
+    color: grey;
+
+    margin-bottom: 20px;
+}
+
+#explore .explore-cards-container{
+    width: 100vw;
+    min-height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#explore .explore-cards-container .explore-cards {
+    position: relative;
+    width: 350px;
+    height: 300px;
+
+    margin-inline: 30px;
+    border-radius: 20px;
+}
+
+#explore .explore-cards-container .explore-cards .transform-card {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+#explore .explore-cards-container .explore-cards .transform-card .card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: #19A7CE;
+
+    border-radius: 20px;
+
+    backface-visibility: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    font-weight: bold;
+    font-size: clamp(1rem, 1.1vw, 1.8rem);
+    color: white;
+}
+
+#explore .explore-cards-container .explore-cards .transform-card .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    backface-visibility: hidden;
+
+    transform: rotateY(180deg);
+
+    background: #f5ea7b;
+    color: black;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-weight: bold;
+
 }
 
 /* MEDIA-QUERIES */
@@ -201,6 +322,22 @@
     }
     #introduction-section .header-image img {
         width: 400px;
+        margin-bottom: 40px;
+    }
+
+    /* EXPLORE-SECTION */
+    #explore .explore-cards-container {
+        flex-direction: column;
+    }
+
+    #explore .explore-cards-container .explore-cards {
+        margin-inline: 0px;
+        margin-bottom: 20px;
+
+        backface-visibility: hidden;
+        
+        width: 300px;
+        height: 250px;
     }
 }
 
@@ -209,6 +346,13 @@
     color: white;
     cursor: pointer;
 }
+
+#explore .explore-cards-container .explore-cards .transform-card:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+
 
 /* ANIMATIONS */
 @keyframes dropItDown {
