@@ -295,6 +295,7 @@
     text-align: center;
 
     font-weight: bold;
+    padding-inline: 20px;
 
 }
 
@@ -401,6 +402,8 @@
     font-weight: bold;
     font-size: clamp(1.2rem, 3vw, 3.1rem);
 
+    letter-spacing: 2px;
+
     margin-bottom: 40px;
 
     -webkit-text-stroke: 1.2px white;
@@ -500,8 +503,22 @@
 
     #features .second-half .content .carrousel .carrousel-card {
         min-height: 250px;
-        min-width: 390px;
+        min-width: 369px;
     }
+}
+
+/* FOOTER-SECTION */
+#footer {
+    min-height: 10vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer img {
+    width: 50px;
 }
 
 /* HOVER-EFFECTS */
@@ -544,4 +561,14 @@
     } to { 
         transform: rotate(1turn);
     }
+}
+
+/* HORIZONTAL-RULE */
+#break-it-up {
+    display: block;
+    margin: auto;
+
+    width: 70%;
+    border: 1.2px solid rgba(105, 34, 227, 0.937);
+    border-radius: 50%;
 }
