@@ -1,0 +1,232 @@
+/* COLOR-IT-UP */
+:root {
+    --button-color: #2ABDA3;
+    --background-color: #FFFFFF;
+    --black: #111111;
+}
+
+/* CSS-RESET-SECTION  */
+* {
+    margin : 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+/* PAGE-LOADER-STYLE-SECTION */
+.loader {
+    position: fixed;
+    top: 0;
+    left:0;
+    
+    min-height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    transition: opacity 0.75s, visibility 0.75s;
+
+    z-index: 1;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+
+    border: 15px solid white;
+    border-top-color: rgba(105, 34, 227, 0.937);
+    border-radius: 50%;
+
+    animation: pageLoading 0.75s ease infinite;
+}
+
+
+.loaderHidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* MAIN-CONTAINER */
+#main-container {
+    width: 100vw;
+    min-height: 100vh;
+
+    background: var(--background-color);
+}
+
+/* NAV-BAR-SECTION */
+#main-container #nav-bar-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-inline: 80px;
+    margin-top: 20px;
+
+    backface-visibility: hidden;
+    animation: dropItDown 0.4s ease;
+
+}
+
+#main-container #nav-bar-section .header h1 {
+    font-weight: 600;
+    font-size: clamp(1.2rem, 2vw, 2.1rem);
+
+    background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#main-container #nav-bar-section .links {
+    display: flex;
+    gap: 40px;
+}
+
+#main-container #nav-bar-section .links a {
+    text-decoration: none;
+    color: var(--black);
+
+    font-weight: 600;
+    font-size: clamp(1.1rem, 1.3vw, 2.1rem);
+}
+
+#main-container #nav-bar-section .signup a {
+    text-decoration: none;
+    color: black;
+
+    font-weight: 600;
+    font-size: clamp(1.1rem, 1vw, 2.1rem);
+
+    border: 1px solid var(--button-color);
+    border-radius: 10px;
+
+    background: var(--button-color);
+    padding: 12px 30px;
+
+    transition: color 0.3s ease;
+}
+
+/* INTRODUCTION-SECTION */
+#introduction-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+
+    backface-visibility: hidden;
+    animation: dropItDown 0.9s ease;
+}
+
+#introduction-section .intro-paragraph {
+    font-size: clamp(0.6rem, 1vw, 2rem);
+
+    margin: 50px 20px;
+    color: grey;
+
+    font-weight: bold;
+}
+
+#introduction-section .header span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: clamp(2rem, 5vw, 6rem);
+}
+
+#introduction-section .header .special {
+    background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 30px;
+}
+
+#introduction-section .outro-paragraph {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+    color: grey;
+
+    margin-bottom: 100px;
+
+    font-weight: bold;
+    font-size: clamp(0.6rem, 1vw, 2rem);
+}
+
+#introduction-section .header-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#introduction-section .header-image img {
+   border-radius: 30px;
+}
+
+/* MEDIA-QUERIES */
+@media screen and (max-width: 540px){
+    /* NAV-BAR-SECTION  */
+    #main-container #nav-bar-section {
+        margin-inline: 13px;
+    }
+
+    #main-container #nav-bar-section .links {
+        gap: 10px;
+    }
+
+    #main-container #nav-bar-section .links a {
+        font-size: 12px;
+    }
+
+    #main-container #nav-bar-section .signup a {
+        font-size: 13px;
+        padding: 7px 15px;
+    }
+
+    /* INTRODUCTION-SECTION */
+    #introduction-section .outro-paragraph {
+        margin-bottom: 60px;
+    }
+    #introduction-section .header-image img {
+        width: 400px;
+    }
+}
+
+/* HOVER-EFFECTS */
+#main-container #nav-bar-section .signup a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* ANIMATIONS */
+@keyframes dropItDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-120px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes pageLoading {
+    from { 
+        transform: rotate(0turn);
+    } to { 
+        transform: rotate(1turn);
+    }
+}
