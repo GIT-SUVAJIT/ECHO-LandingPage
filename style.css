@@ -65,21 +65,17 @@
 
 /* NAV-BAR-SECTION */
 #main-container #nav-bar-section {
+    width: 100vw;
+    min-height: 10vh;
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    margin-inline: 80px;
-    margin-top: 20px;
-
-    backface-visibility: hidden;
-    animation: dropItDown 0.4s ease;
-
+    justify-content: space-around;
 }
 
-#main-container #nav-bar-section .header h1 {
-    font-weight: 600;
-    font-size: clamp(1.2rem, 2vw, 2.1rem);
+#main-container #nav-bar-section .logo-header {
+    font-weight: bold;
+    font-size: clamp(1.2rem, 1.6vw, 1.9rem);
 
     background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
     -webkit-background-clip: text;
@@ -87,33 +83,39 @@
     background-clip: none;
 }
 
-#main-container #nav-bar-section .links {
+#main-container #nav-bar-section .hamburger {
+    display: none;
+}
+
+#main-container #nav-bar-section .nav-bar-menu ul {
+    list-style-type: none;
+
     display: flex;
-    gap: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
-#main-container #nav-bar-section .links a {
+#main-container #nav-bar-section .nav-bar-menu ul li a {
     text-decoration: none;
-    color: var(--black);
+    color: #00A0FA;
 
-    font-weight: 600;
-    font-size: clamp(1.1rem, 1.3vw, 2.1rem);
-}
+    font-weight: bold;
+    font-size: clamp(1rem, 1.1vw, 1.5rem);
 
-#main-container #nav-bar-section .signup a {
-    text-decoration: none;
-    color: black;
-
-    font-weight: 600;
-    font-size: clamp(1.1rem, 1vw, 2.1rem);
-
-    border: 1px solid var(--button-color);
-    border-radius: 10px;
-
-    background: var(--button-color);
-    padding: 12px 30px;
+    margin-inline: 10px;
+    padding: 10px 25px;
 
     transition: color 0.3s ease;
+}
+
+#main-container #nav-bar-section .nav-bar-menu .sign-up-button {
+    border: 1px solid #2ABDA3;
+    border-radius: 10px;   
+    color: white;
+
+    background: #2ABDA3;
+
+    transition: color 0.4s ease;
 }
 
 /* INTRODUCTION-SECTION */
@@ -450,24 +452,68 @@
 /* MEDIA-QUERIES */
 @media screen and (max-width: 540px){
     /* NAV-BAR-SECTION  */
-    #main-container #nav-bar-section {
-        margin-inline: 13px;
+    #main-container #nav-bar-section .hamburger {
+        display: block;
+        cursor: pointer;
     }
 
-    #main-container #nav-bar-section .links {
-        gap: 10px;
+    #main-container #nav-bar-section .hamburger img {
+        width: 40px;
     }
 
-    #main-container #nav-bar-section .links a {
-        font-size: 12px;
+    #main-container #nav-bar-section .nav-bar-menu {
+        height: 0vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+
+        width: 100vw;
+        background: white;
+        overflow: hidden;
+
     }
 
-    #main-container #nav-bar-section .signup a {
-        font-size: 13px;
-        padding: 7px 15px;
+
+    #main-container #nav-bar-section .nav-bar-menu.active {
+        min-height: 100vh;
+    }
+
+    #main-container #nav-bar-section .nav-bar-menu.active ul {
+        transition: all 0.7s ease;
+        margin-top: 30px;
+        opacity: 1;
+    }
+
+    #main-container #nav-bar-section .nav-bar-menu ul {
+        display: block;
+        width: fit-content;
+
+        margin: 80px auto 0px auto;
+
+        text-align: center;
+
+        opacity: 0;
+    }
+
+
+    #main-container #nav-bar-section .nav-bar-menu ul li  {
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+
+    
+    #main-container #nav-bar-section .nav-bar-menu ul li a {
+        font-weight: bold;
+        font-size: 25px;
     }
 
     /* INTRODUCTION-SECTION */
+
+    #introduction-section .intro-paragraph {
+        margin: 20px 20px;
+    }
+
     #introduction-section .outro-paragraph {
         margin-bottom: 60px;
     }
@@ -526,10 +572,17 @@
 }
 
 /* HOVER-EFFECTS */
-#main-container #nav-bar-section .signup a:hover {
-    color: white;
+#main-container #nav-bar-section .nav-bar-menu .sign-up-button:hover {
+    color: black;
     cursor: pointer;
 }
+
+
+#main-container #nav-bar-section .nav-bar-menu ul li a:hover {
+    color: grey;
+    cursor: pointer;
+}
+
 
 #explore .explore-cards-container .explore-cards .transform-card:hover {
     transform: rotateY(180deg);
