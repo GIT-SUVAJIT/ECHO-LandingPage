@@ -5,6 +5,6 @@
 const hamburger = document.querySelector(".hamburger");
 const navBar = document.querySelector(".nav-bar-menu");
 
-hamburger.onclick = function () {
-    navBar.classList.toggle("active");
+hamburger.onclick = function () { 
+    navBar.classList.toggle("active"); 
 }
