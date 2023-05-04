@@ -36,6 +36,7 @@ This application is still in development phase [v1.5] [latest-release]
 ![App Screenshot](/screenshots/mobile-4.jpg)
 
 ## Skills
+
 FRONT END => Javascript, HTML, CSS
 
 BACK END => mySql & php
