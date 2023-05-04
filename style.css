@@ -571,7 +571,7 @@
     }
 }
 
-@media screen and (max-width:1920px) {
+@media screen and (min-width:1920px) {
     /* FEATURES-SECTION  */
     #features .second-half .content .carrousel .carrousel-card {
         min-height: 400px;
