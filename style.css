@@ -571,6 +571,14 @@
     }
 }
 
+@media screen and (max-width:1920px) {
+    /* FEATURES-SECTION  */
+    #features .second-half .content .carrousel .carrousel-card {
+        min-height: 400px;
+        min-width: 950px;
+    }
+}
+
 /* FOOTER-SECTION */
 #footer {
     min-height: 10vh;
