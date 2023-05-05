@@ -531,6 +531,7 @@
     #introduction-section .outro-paragraph {
         margin-bottom: 60px;
     }
+
     #introduction-section .header-image img {
         width: 400px;
         margin-bottom: 40px;
@@ -573,13 +574,35 @@
 
 @media screen and (width:1920px) {
     /* FEATURES-SECTION  */
-
     #features .second-half .content {
         width: 95vw;
     }
 
     #features .second-half .content .carrousel .carrousel-card {
         min-height: 400px;
+        min-width: 900px;
+    }
+}
+
+@media screen and (width:1366px) {
+    /* INTRODUCTION-SECTION */
+    #introduction-section .header-image img {
+        width: 850px;
+    }
+
+    /* EXPLORE-SECTION */
+    #explore .explore-cards-container .explore-cards {
+        width: 270px;
+        height: 200px;
+    }
+
+    /* FEATURES-SECTION */
+    #features .second-half .content {
+        width: 66vw;
+    }
+
+    #features .second-half .content .carrousel .carrousel-card {
+        width: 100px;
         min-width: 900px;
     }
 }
