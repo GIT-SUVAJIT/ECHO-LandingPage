@@ -461,7 +461,7 @@
 }
 
 /* MEDIA-QUERIES */
-@media screen and (max-width: 540px){
+@media screen and (max-width:540px) {
     /* NAV-BAR-SECTION  */
     #main-container #nav-bar-section .hamburger {
         display: block;
@@ -571,11 +571,16 @@
     }
 }
 
-@media screen and (min-width:1920px) {
+@media screen and (width:1920px) {
     /* FEATURES-SECTION  */
+
+    #features .second-half .content {
+        width: 95vw;
+    }
+
     #features .second-half .content .carrousel .carrousel-card {
         min-height: 400px;
-        min-width: 950px;
+        min-width: 900px;
     }
 }
 
