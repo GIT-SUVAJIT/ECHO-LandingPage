@@ -71,6 +71,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    position: sticky;
+    top: 0;
+
+    background: white;
+
+    z-index: 1;
 }
 
 #main-container #nav-bar-section .logo-header {
@@ -575,12 +582,12 @@
 @media screen and (width:1920px) {
     /* FEATURES-SECTION  */
     #features .second-half .content {
-        width: 95vw;
+        width: 50vw;
     }
 
     #features .second-half .content .carrousel .carrousel-card {
         min-height: 400px;
-        min-width: 900px;
+        min-width: 950px;
     }
 }
 
