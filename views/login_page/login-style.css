@@ -1,0 +1,191 @@
+/* CSS-RESET-SECTION */
+* {
+    margin : 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+/* PAGE-LOADER-STYLE-SECTION */
+.loader {
+    position: fixed;
+    top: 0;
+    left:0;
+    
+    min-height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    transition: opacity 0.75s, visibility 0.75s;
+
+    z-index: 1;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+
+    border: 15px solid white;
+    border-top-color: rgba(105, 34, 227, 0.937);
+    border-radius: 50%;
+
+    animation: pageLoading 0.75s ease infinite;
+}
+
+
+.loaderHidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* LOGIN-CONTAINER */
+#login-container {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* NAV-BAR-SECTION */
+#login-container #nav-bar-section {
+    width: 100vw;
+    min-height: 11vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: sticky;
+    top: 0;
+
+    background: white;
+
+    z-index: 1;
+}
+
+#login-container #nav-bar-section .logo-header {
+    font-weight: bold;
+    font-size: clamp(1.2rem, 1.6vw, 1.9rem);
+
+    background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: none;
+}
+
+#login-container #nav-bar-section .hamburger {
+    display: none;
+}
+
+#login-container #nav-bar-section .nav-bar-menu ul {
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-container #nav-bar-section .nav-bar-menu ul li a {
+    text-decoration: none;
+    color: #00A0FA;
+
+    font-weight: bold;
+    font-size: clamp(1rem, 1.1vw, 1.5rem);
+
+    margin-inline: 10px;
+    padding: 10px 25px;
+
+    transition: color 0.3s ease;
+}
+
+#login-container #nav-bar-section .nav-bar-menu .sign-up-button {
+    border: 1px solid #2ABDA3;
+    border-radius: 10px;   
+    color: white;
+
+    background: #2ABDA3;
+
+    transition: color 0.4s ease;
+}
+
+#login-container #nav-bar-section .nav-bar-menu .log-in-button {
+    border: 1px solid #fda085;
+    border-radius: 10px;
+    color: white;
+
+    padding: 10px 28px;
+    background: #fda085;
+
+    transition: color 0.4s ease;
+}
+
+/* MEDIA-QUERY-SECTION */
+@media screen and (max-width:540px) {
+       /* NAV-BAR-SECTION  */
+    #login-container #nav-bar-section .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    #login-container #nav-bar-section .hamburger img {
+        width: 30px;
+    }
+
+    #login-container #nav-bar-section .nav-bar-menu {
+        height: 0vh;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+
+        width: 100vw;
+        background: white;
+        overflow: hidden;
+
+    }
+
+
+    #login-container #nav-bar-section .nav-bar-menu.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 100vh;
+    }
+
+    #login-container #nav-bar-section .nav-bar-menu.active ul {
+        transition: all 0.7s ease;
+        margin-top: 20px;
+        opacity: 1;
+    }
+
+    #login-container #nav-bar-section .nav-bar-menu ul {
+        display: block;
+        width: fit-content;
+
+        margin: 50px auto 0px auto;
+
+        text-align: center;
+
+        opacity: 0;
+    }
+
+
+    #login-container #nav-bar-section .nav-bar-menu ul li {
+        margin-bottom: 100px;
+    }
+
+    
+    #login-container #nav-bar-section .nav-bar-menu ul li a {
+        font-weight: bold;
+        font-size: 25px;
+    }
+}
+
+/* HOVER-EFFECTS  */
+/* ANIMATIONS */

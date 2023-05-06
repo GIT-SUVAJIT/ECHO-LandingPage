@@ -10,7 +10,7 @@ For the front-end : HTML, CSS & JS
 
 For the backend : mySql & php.
 
-This application is still in development phase [v1.5] [latest-release]
+This application is still in development phase [v2.0] [latest-release]
 
 ## Authors
 
