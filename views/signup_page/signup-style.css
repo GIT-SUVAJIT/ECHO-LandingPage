@@ -191,3 +191,10 @@
 
 /* HOVER-EFFECTS  */
 /* ANIMATIONS */
+@keyframes pageLoading {
+    from { 
+        transform: rotate(0turn);
+    } to { 
+        transform: rotate(1turn);
+    }
+}
