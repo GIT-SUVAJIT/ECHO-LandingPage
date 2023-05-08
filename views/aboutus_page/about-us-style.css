@@ -196,13 +196,13 @@
 
 #crew-members .crew-member-image  {
     width: 20%;
-    height: 450px;
+    height: 550px;
     position: relative;
 }
 
 #crew-members .crew-member-image img {
     width: 100%;
-    height: 450px;
+    height: 550px;
     background-size: cover;    
 
     border: 0.5px solid transparent;
@@ -217,7 +217,7 @@
     top: 0;
     border-radius: 15px;
     cursor: pointer;
-    background-color: black;
+    background: linear-gradient(180deg, #EF05D8, #00A0FA);
     transition: 1s ease;
 }
 
@@ -335,7 +335,12 @@
     /* CREW-CAROUSEL-CARD */
     #crew-members .crew-member-image  {
         width: 80%;
-        height: 450px;
+        height: 470px;
+    }
+
+    #crew-members .crew-member-image img {
+        width: 100%;
+        height: 470px;
     }
 
     .crew-member-description p {
@@ -352,6 +357,17 @@
     }
 }
 
+@media screen and (width: 1366px) {
+    #crew-members .crew-member-image {
+        /* width: 80%; */
+        height: 450px;
+    }
+
+    #crew-members .crew-member-image img {
+        width: 100%;
+        height: 450px;
+    }
+}
 
 /* HOVER-EFFECTS  */
 /* ANIMATIONS */
