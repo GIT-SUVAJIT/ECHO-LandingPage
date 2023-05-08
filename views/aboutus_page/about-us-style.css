@@ -6,6 +6,9 @@
     scroll-behavior: smooth;
 
     font-family: 'Roboto', sans-serif;
+
+    scrollbar-width: thin;
+    scrollbar-color: rgba(105, 34, 227, 0.937) #101010;
 }
 
 /* PAGE-LOADER-STYLE-SECTION */
@@ -46,6 +49,309 @@
 }
 
 /* ABOUT-US-CONTAINER */
+#about-us-container {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* NAV-BAR-SECTION */
+#about-us-container #nav-bar-section {
+    width: 100vw;
+    min-height: 11vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: sticky;
+    top: 0;
+
+    background: white;
+
+    z-index: 1;
+}
+
+#about-us-container #nav-bar-section .logo-header {
+    font-weight: bold;
+    font-size: clamp(1.2rem, 1.6vw, 1.9rem);
+
+    background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: none;
+}
+
+#about-us-container #nav-bar-section .hamburger {
+    display: none;
+}
+
+#about-us-container #nav-bar-section .nav-bar-menu ul {
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-us-container #nav-bar-section .nav-bar-menu ul li a {
+    text-decoration: none;
+    color: #00A0FA;
+
+    font-weight: bold;
+    font-size: clamp(1rem, 1.1vw, 1.5rem);
+
+    margin-inline: 10px;
+    padding: 10px 25px;
+
+    transition: color 0.3s ease;
+}
+
+#about-us-container #nav-bar-section .nav-bar-menu .sign-up-button {
+    border: 1px solid #2ABDA3;
+    border-radius: 10px;   
+    color: white;
+
+    background: #2ABDA3;
+
+    transition: color 0.4s ease;
+}
+
+#about-us-container #nav-bar-section .nav-bar-menu .log-in-button {
+    border: 1px solid #fda085;
+    border-radius: 10px;
+    color: white;
+
+    padding: 10px 28px;
+    background: #fda085;
+
+    transition: color 0.4s ease;
+}
+
+/* ABOUT-US-HEADER-SECTION */
+#about-us-container #aboutus-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+#about-us-container #aboutus-header .primary-text h1 {
+    font-weight: normal;
+    font-size: clamp(1.2rem, 2vw, 2.1rem);
+
+    color: rgb(11, 163, 163);
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#about-us-container #aboutus-header .main-text {
+    text-align: center;
+}
+
+#about-us-container #aboutus-header .main-text h1 {
+    font-weight: bold;
+    font-size: clamp(2rem, 5vw, 6rem);
+}
+
+#about-us-container #aboutus-header .main-text .special {
+    background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: none;
+
+    margin-bottom: 20px;
+}
+
+#about-us-container #aboutus-header .aboutus-paragraph {
+    text-align: center;
+    padding-inline: 7px;
+
+    margin-bottom: 30px;
+}
+
+#about-us-container #aboutus-header .aboutus-paragraph p {
+    font-size: clamp(0.6rem, 1vw, 3rem);
+    font-weight: bold;
+
+    color: grey;
+}
+
+/* CREW-CAROUSEL-CARD */
+#crew-members {
+    margin: 30px 0px;
+    width: 100%;
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    padding-bottom: 20px;
+    gap:  80px;
+}
+
+#crew-members .crew-member-image  {
+    width: 20%;
+    height: 450px;
+    position: relative;
+}
+
+#crew-members .crew-member-image img {
+    width: 100%;
+    height: 450px;
+    background-size: cover;    
+
+    border: 0.5px solid transparent;
+    border-radius: 15px;
+}
+
+#crew-members .crew-member-image .overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: black;
+    transition: 1s ease;
+}
+
+#crew-members .crew-member-image:hover .overlay {
+    opacity: 1;
+}
+
+.crew-member-description {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    opacity: 0;
+    
+    transform: translateX(-50%);
+
+    transition: 1s ease;
+}
+
+.horizontal-rule {
+    background: white;
+    height: 2px;
+    border: 0;
+    margin: 20px auto;
+    width: 60%;
+}
+
+.crew-member-description h3 {
+    color: white;
+    cursor: pointer;
+
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.crew-member-description p {
+    color: white;
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    cursor: pointer;
+
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.crew-member-image:hover .crew-member-description {
+    bottom: 16%;
+    opacity: 1;
+}
+
 /* MEDIA-QUERY-SECTION */
+@media screen and (max-width:540px) {
+    /* NAV-BAR-SECTION  */
+    #about-us-container #nav-bar-section .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    #about-us-container #nav-bar-section .hamburger img {
+        width: 30px;
+    }
+
+    #about-us-container #nav-bar-section .nav-bar-menu {
+        height: 0vh;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+
+        width: 100vw;
+        background: white;
+        overflow: hidden;
+
+    }
+
+
+    #about-us-container #nav-bar-section .nav-bar-menu.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 100vh;
+    }
+
+    #about-us-container #nav-bar-section .nav-bar-menu.active ul {
+        transition: all 0.7s ease;
+        margin-top: 20px;
+        opacity: 1;
+    }
+
+    #about-us-container #nav-bar-section .nav-bar-menu ul {
+        display: block;
+        width: fit-content;
+
+        margin: 50px auto 0px auto;
+
+        text-align: center;
+
+        opacity: 0;
+    }
+
+
+    #about-us-container #nav-bar-section .nav-bar-menu ul li {
+        margin-bottom: 100px;
+    }
+
+    
+    #about-us-container #nav-bar-section .nav-bar-menu ul li a {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    /* CREW-CAROUSEL-CARD */
+    #crew-members .crew-member-image  {
+        width: 80%;
+        height: 450px;
+    }
+
+    .crew-member-description p {
+        font-size: clamp(1.1rem, 1.2vw, 1.5rem);
+    }
+
+    .crew-member-description h3 {
+        font-size: clamp(1.3rem, 1.2vw, 1.5rem);
+    }
+
+    .crew-member-image:hover .crew-member-description {
+        bottom: 30%;
+        opacity: 1;
+    }
+}
+
+
 /* HOVER-EFFECTS  */
 /* ANIMATIONS */
