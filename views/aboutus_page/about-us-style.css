@@ -136,6 +136,11 @@
     flex-direction: column;
 }
 
+#about-us-container #aboutus-header .primary-text {
+    backface-visibility: hidden;
+    animation: dropItDown 0.5s ease;
+}
+
 #about-us-container #aboutus-header .primary-text h1 {
     font-weight: normal;
     font-size: clamp(1.2rem, 2vw, 2.1rem);
@@ -148,6 +153,9 @@
 
 #about-us-container #aboutus-header .main-text {
     text-align: center;
+
+    backface-visibility: hidden;
+    animation: dropItDown 0.8s ease;
 }
 
 #about-us-container #aboutus-header .main-text h1 {
@@ -169,6 +177,9 @@
     padding-inline: 7px;
 
     margin-bottom: 30px;
+
+    backface-visibility: hidden;
+    animation: dropItDown 1s ease;
 }
 
 #about-us-container #aboutus-header .aboutus-paragraph p {
@@ -192,6 +203,9 @@
 
     padding-bottom: 20px;
     gap:  80px;
+
+    backface-visibility: hidden;
+    animation: dropItDown 1.5s ease;
 }
 
 #crew-members .crew-member-image  {
@@ -377,5 +391,17 @@
         transform: rotate(0turn);
     } to { 
         transform: rotate(1turn);
+    }
+}
+
+@keyframes dropItDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-120px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }

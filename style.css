@@ -145,7 +145,7 @@
     flex-direction: column;
 
     backface-visibility: hidden;
-    animation: dropItDown 0.9s ease;
+    animation: dropItDown 0.4s ease;
 }
 
 #introduction-section .intro-paragraph {
@@ -155,6 +155,11 @@
     color: grey;
 
     font-weight: bold;
+}
+
+#introduction-section .header {
+    backface-visibility: hidden;
+    animation: dropItDown 0.6s ease;
 }
 
 #introduction-section .header span {
@@ -187,6 +192,9 @@
 
     font-weight: bold;
     font-size: clamp(0.6rem, 1vw, 2rem);
+
+    backface-visibility: hidden;
+    animation: dropItDown 0.8s ease;
 }
 
 #introduction-section .header-image {
@@ -199,6 +207,9 @@
 #introduction-section .header-image img {
    border-radius: 30px;
    margin-bottom: 90px;
+
+   backface-visibility: hidden;
+   animation: dropItDown 1s ease;
 }
 
 /* EXPLORE-SECTION */
@@ -207,8 +218,11 @@
     align-items: center;
     flex-direction: column;
 
+}
+
+#explore .explore-primary-text {
     backface-visibility: hidden;
-    animation: dropItDown 1s ease;
+    animation: dropItDown 1.2s ease;
 }
 
 #explore .explore-primary-text h1 {
@@ -224,6 +238,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    backface-visibility: hidden;
+    animation: dropItDown 1.4s ease;
 }
 
 #explore .explore-main-text h1 {
@@ -238,6 +255,12 @@
     background-clip: none;
 
     margin-bottom: 20px;
+}
+
+#explore .explore-paragraph {
+    text-align: center;
+    backface-visibility: hidden;
+    animation: dropItDown 1.6s ease;
 }
 
 #explore .explore-paragraph p {
@@ -256,6 +279,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    backface-visibility: hidden;
+    animation: dropItDown 1.8s ease;
 }
 
 #explore .explore-cards-container .explore-cards {
@@ -331,7 +357,7 @@
     margin-bottom: 30px;
 
     backface-visibility: hidden;
-    animation: dropItDown 1.3s ease;
+    animation: dropItDown 2s ease;
 
 }
 
@@ -342,6 +368,9 @@
 
     flex-direction: column;
     text-align: center;
+
+    backface-visibility: hidden;
+    animation: dropItDown 2.2s ease;
 }
 
 #features .first-half h1 {
@@ -391,6 +420,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    backface-visibility: hidden;
+    animation: dropItDown 2.4s ease;
 }
 
 #features .second-half .content {
@@ -467,12 +499,30 @@
     background: linear-gradient(-229deg, #48c6ef, #6f86d6);
 }
 
+/* FOOTER-SECTION */
+#footer {
+    min-height: 10vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    backface-visibility: hidden;
+    animation: dropItDown 2.8s ease;
+}
+
+#footer img {
+    width: 50px;
+}
+
 /* MEDIA-QUERIES */
 @media screen and (max-width:540px) {
     /* NAV-BAR-SECTION  */
     #main-container #nav-bar-section .hamburger {
         display: block;
         cursor: pointer;
+
     }
 
     #main-container #nav-bar-section .hamburger img {
@@ -537,6 +587,7 @@
 
     #introduction-section .outro-paragraph {
         margin-bottom: 60px;
+        padding-inline: 7px;
     }
 
     #introduction-section .header-image img {
@@ -545,6 +596,12 @@
     }
 
     /* EXPLORE-SECTION */
+
+    #explore .explore-paragraph {
+        text-align: center;
+        padding-inline: 7px;
+    }
+
     #explore .explore-cards-container {
         flex-direction: column;
     }
@@ -566,6 +623,11 @@
     /* FEATURES-SECTION */
     #features {
         flex-direction: column;
+    }
+
+    #features .first-half {
+        text-align: center;
+        padding-inline: 7px;
     }
 
     #features .second-half .content {
@@ -614,19 +676,6 @@
     }
 }
 
-/* FOOTER-SECTION */
-#footer {
-    min-height: 10vh;
-    width: 100vw;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#footer img {
-    width: 50px;
-}
 
 /* HOVER-EFFECTS */
 #main-container #nav-bar-section .nav-bar-menu .sign-up-button:hover {
@@ -689,4 +738,7 @@
     width: 70%;
     border: 1.2px solid rgba(105, 34, 227, 0.937);
     border-radius: 50%;
+
+    backface-visibility: hidden;
+    animation: dropItDown 2.6s ease;
 }
