@@ -24,6 +24,9 @@ This application is still in development phase [v2.0] [latest-release]
 - Better animation controls
 - Cross platform better support
 
+- Added the about-us page
+- Members card on hover effect created
+
 
 ## Screenshots
 
