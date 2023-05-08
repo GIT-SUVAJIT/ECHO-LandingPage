@@ -31,17 +31,6 @@ This application is still in development phase [v2.0] [latest-release]
 - Added the about-us page
 - Members card on hover effect created
 
-
-## Screenshots
-
-![App Screenshot](/screenshots/mobile-1.jpg)
-
-![App Screenshot](/screenshots/mobile-2.jpg)
-
-![App Screenshot](/screenshots/mobile-3.jpg)
-
-![App Screenshot](/screenshots/mobile-4.jpg)
-
 ## Skills
 
 FRONT END => Javascript, HTML, CSS
