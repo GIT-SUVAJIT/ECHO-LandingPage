@@ -92,7 +92,7 @@
 
 #contact-container #nav-bar-section .nav-bar-menu ul li a {
     text-decoration: none;
-    color: #00A0FA;
+    color: black;
 
     font-weight: bold;
     font-size: clamp(1rem, 1.1vw, 1.5rem);
@@ -190,6 +190,19 @@
 
 
 /* HOVER-EFFECTS  */
+#contact-container #nav-bar-section .nav-bar-menu ul li a:hover {
+    color: orchid;
+    cursor: pointer;
+}
+
+#contact-container #nav-bar-section .nav-bar-menu .sign-up-button:hover {
+    color: black;
+}
+
+#contact-container #nav-bar-section .nav-bar-menu .log-in-button:hover {
+    color: black;
+}
+
 /* ANIMATIONS */
 @keyframes pageLoading {
     from { 

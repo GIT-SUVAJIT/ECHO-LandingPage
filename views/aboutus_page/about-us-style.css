@@ -95,7 +95,7 @@
 
 #about-us-container #nav-bar-section .nav-bar-menu ul li a {
     text-decoration: none;
-    color: #00A0FA;
+    color: black;
 
     font-weight: bold;
     font-size: clamp(1rem, 1.1vw, 1.5rem);
@@ -284,6 +284,36 @@
     opacity: 1;
 }
 
+/* HORIZONTAL-RULE */
+#break-it-up {
+    display: block;
+    margin: auto;
+
+    width: 70%;
+    border: 1.2px solid rgba(105, 34, 227, 0.937);
+    border-radius: 50%;
+
+    backface-visibility: hidden;
+    animation: dropItDown 1.8s ease;
+}
+
+/* FOOTER-SECTION */
+#footer {
+    min-height: 10vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    backface-visibility: hidden;
+    animation: dropItDown 2.0s ease;
+}
+
+#footer img {
+    width: 50px;
+}
+
 /* MEDIA-QUERY-SECTION */
 @media screen and (max-width:540px) {
     /* NAV-BAR-SECTION  */
@@ -373,7 +403,7 @@
 
 @media screen and (width: 1366px) {
     #crew-members .crew-member-image {
-        /* width: 80%; */
+       
         height: 450px;
     }
 
@@ -384,6 +414,18 @@
 }
 
 /* HOVER-EFFECTS  */
+#about-us-container #nav-bar-section .nav-bar-menu ul li a:hover {
+    color: orchid;
+    cursor: pointer;
+}
+
+#about-us-container #nav-bar-section .nav-bar-menu .sign-up-button:hover {
+    color: black;
+}
+
+#about-us-container #nav-bar-section .nav-bar-menu .log-in-button:hover {
+    color: black;
+}
 
 /* ANIMATIONS */
 @keyframes pageLoading {
