@@ -15,6 +15,10 @@ This application is still in development phase [v2.0] [latest-release]
 ## Authors
 
 - [@GITSUVAJITK](https://github.com/GIT-SUVAJIT)
+- [@codeSubahjit0](https://github.com/codeSubhajit0)
+- [@SoumikGG-8bit](https://github.com/SoumikGG-8bit)
+- [@SubrataKar](https://github.com/SubrataKar)
+
 
 
 ## Features
