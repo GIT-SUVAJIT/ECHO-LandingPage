@@ -31,6 +31,8 @@ This application is still in development phase [v2.0] [latest-release]
 - Added the about-us page
 - Members card on hover effect created
 
+- Aboutus section now holds the creator,s github and email links
+
 ## Skills
 
 FRONT END => Javascript, HTML, CSS
