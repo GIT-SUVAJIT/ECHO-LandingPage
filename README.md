@@ -32,6 +32,7 @@ This application is still in development phase [v2.0] [latest-release]
 - Members card on hover effect created
 
 - Aboutus section now holds the creator,s github and email links
+- Contact section added 
 
 ## Skills
 
