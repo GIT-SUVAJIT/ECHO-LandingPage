@@ -42,4 +42,4 @@ BACK END => mySql & php
 
 ## Live Page
 
-[Click Here to view the page](https://echo-chattingv1.netlify.app/)
+[Click Here to view the page](https://echo-chatapp.netlify.app/)
